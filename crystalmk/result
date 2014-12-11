@@ -1,0 +1,40 @@
+
+Sequoia benchmark version 0.9.0
+
+***** timing for Crystal_div 
+
+Wall time = 2.221367 seconds. 
+
+CPU  time = 2.198572 seconds. 
+
+
+***** timing for Crystal_pow 
+
+Wall time = 2.981846 seconds. 
+
+CPU  time = 2.954614 seconds. 
+
+
+***** timing for Crystal_Cholesky 
+
+Wall time = 3.826912 seconds. 
+
+CPU  time = 3.801108 seconds. 
+
+
+***** results 
+returnVal = 1.199696 
+i =     0 j =     0    dtcdgd[i][j]   = 1.529052e-01 
+i =     0 j =     4    dtcdgd[i][j]   = 1.080000e-02 
+i =     0 j =     8    dtcdgd[i][j]   = 1.080000e-02 
+i =     4 j =     0    dtcdgd[i][j]   = 7.586401e-02 
+i =     4 j =     4    dtcdgd[i][j]   = 1.563261e-01 
+i =     4 j =     8    dtcdgd[i][j]   = 8.868500e-03 
+i =     8 j =     0    dtcdgd[i][j]   = 8.109601e-02 
+i =     8 j =     4    dtcdgd[i][j]   = 6.064326e-02 
+i =     8 j =     8    dtcdgd[i][j]   = 1.600819e-01 
+
+Total Wall time = 9.030241 seconds. 
+
+Total CPU  time = 8.954294 seconds. 
+

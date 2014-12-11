@@ -1,0 +1,24 @@
+#PSUB -s /bin/csh
+#PSUB -b lc
+#PSUB -eo
+#PSUB -ro
+#PSUB -me
+#PSUB -ln 1 -g 1
+#PSUB -tM  1h
+
+#Execute problem from the current directory
+
+cd /g/g0/chanbor/up/irsdir/micro_kernel
+
+#setenv XLSMPOPTS 'parthds=1'
+setenv OMP_NUM_THREADS 1
+setenv HPM_DIV_WEIGHT 4
+setenv MP_INFOLEVEL 3
+setenv MP_EUILIB ip
+
+#setenv HPM_EVENT_SET 1
+
+poe ./rmatmult3
+
+
+#poe hpmcount -s 9 -o hpm.out ./irs -k seq zrad.0001 

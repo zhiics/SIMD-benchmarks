@@ -1,0 +1,38 @@
+
+How to build:
+    Modify the Makefile
+         The Makefile will need to modify by hand to fit your system.
+         Things may need to change are
+         -- The C compiler
+         -- The Linker
+         -- Compiler flags
+         -- Linker flags
+ 
+
+How to run:
+    Copy input deck to file "irsmk_input".
+         e.g  cp irsmk_input_25 irsmk_input
+    Run the executable
+         ./IRSmk
+
+Input problem size:
+    The input format is
+         kmin kmax jmin jmax imin imax kp   jp
+           where [i|j|k]min = 2
+                 [i|j|k]max = 2 + NZONES_along_i
+                 jp         = 2 + imax
+                 kp         = jp * (jmax + 2)
+    e.g 
+    NZONES_along_i = 25     
+         2    27   2    27   2    27   841  29
+    NZONES_along_i = 50  
+         2    52   2    52   2    52  2916  54
+    NZONES_along_i = 100    
+         2   102   2   102   2   102 10816 104
+
+Expected Results:
+    There are corresponding output files for each input deck.
+         e.g irsmk_output_25 for irsmk_input_25
+    The timing is just for reference only and based on 1.9GHz IBM Power5 sequential run.
+
+
